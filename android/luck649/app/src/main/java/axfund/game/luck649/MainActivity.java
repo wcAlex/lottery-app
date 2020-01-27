@@ -28,15 +28,15 @@ public class MainActivity extends AppCompatActivity {
         myWebView.setWebViewClient(new WebViewClient() {
             @Override
             public void onReceivedSslError(WebView view, SslErrorHandler handler, SslError error) {
-                Log.i(DebugTag, String.format("Got http ssl error when load url, e: %s", error.toString()));
+                // Log.i(DebugTag, String.format("Got http ssl error when load url, e: %s", error.toString()));
                 handler.proceed();
             }
         });
 
         String gameUrl = getString(R.string.game_url);
 
-        Log.i(DebugTag, String.format("Start to load url %s in webview.", gameUrl));
+        // Log.i(DebugTag, String.format("Start to load url %s in webview.", gameUrl));
         myWebView.loadUrl(gameUrl);
-        Log.d(DebugTag, String.format("Load finish"));
+        // Log.d(DebugTag, String.format("Load finish"));
     }
 }

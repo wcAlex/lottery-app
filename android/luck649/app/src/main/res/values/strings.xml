@@ -2,4 +2,5 @@
     <string name="app_name">luck649</string>
 <!--    <string name="game_url">https://www.google.co.in</string>-->
     <string name="game_url">https://txproxy.9lp.com/games/649.html</string>
+    <string name="version_name">test_0</string>
 </resources>
